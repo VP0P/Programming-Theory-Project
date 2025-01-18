@@ -7,12 +7,11 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class CatJumpBehavior : IJumpBehavior
+    public class NoJumpBehavior : IJumpBehavior
     {
         public void Jump(Rigidbody rb)
         {
-            rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
-            Debug.Log("Cat jump!");
+            Debug.Log("I can't jump");
         }
     }
 }

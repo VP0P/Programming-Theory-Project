@@ -9,7 +9,7 @@ namespace Assets.Scripts
 {
     public abstract class Animal : MonoBehaviour
     {
-        [SerializeField] private Rigidbody _rigidbody;
+        private Rigidbody _rigidbody;
         protected IJumpBehavior JumpBehavior { get; set; }
 
 
