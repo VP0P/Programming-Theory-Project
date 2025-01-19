@@ -1,7 +1,11 @@
+using Assets.Scripts;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<Animal> _animalPrefabs;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -14,8 +18,8 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void SetCharacter(int i)
+    public void SetCharacter(int index)
     {
-        Debug.Log("Button pressed!");
+        Instantiate(_animalPrefabs[index]);
     }
 }

@@ -11,6 +11,7 @@ namespace Assets.Scripts
     public abstract class Animal : MonoBehaviour
     {
         private Rigidbody _rigidbody;
+        private bool _isOnGroud;
 
         // ENCAPSULATION
         protected IJumpBehavior JumpBehavior { get; set; }
@@ -26,11 +27,21 @@ namespace Assets.Scripts
                 Jump();
 
         }
+        private void OnCollisionEnter(Collision collision)
+        {
+            if(collision.gameObject.CompareTag("ground"))
+                _isOnGroud = true;
+        }
 
         // ENCAPSULATION
         private void Jump()
         {
-            JumpBehavior.Jump(_rigidbody);
+            if(_isOnGroud)
+            {
+                JumpBehavior.Jump(_rigidbody);
+                _isOnGroud = false;
+            }
         }
+
     }
 }

@@ -5,6 +5,7 @@ public class AnimalButton : MonoBehaviour
 {
     private Button _button;
     private GameManager _gameManager;
+    [SerializeField] private int _characterIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +24,6 @@ public class AnimalButton : MonoBehaviour
 
     private void SetCharacter()
     {
-        _gameManager.SetCharacter(1);
+        _gameManager.SetCharacter(_characterIndex);
     }
 }
