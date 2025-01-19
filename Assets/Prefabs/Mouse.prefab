@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7430897709802841832}
   m_Layer: 0
   m_Name: Mouse
-  m_TagString: Untagged
+  m_TagString: mouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,4 +149,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca077b36acf7f75438b8ae8ba497c1fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isOnGroud: 1

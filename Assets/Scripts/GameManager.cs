@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<Animal> _animalPrefabs;
 
+    private List<string> _instantiatedAnimals = new();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -20,6 +22,11 @@ public class GameManager : MonoBehaviour
 
     public void SetCharacter(int index)
     {
-        Instantiate(_animalPrefabs[index]);
+        GameObject animal = GameObject.FindGameObjectWithTag(_animalPrefabs[index].tag);
+
+        if(animal == null)
+        {
+            Instantiate(_animalPrefabs[index]);
+        }
     }
 }

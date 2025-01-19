@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 489778086536439185}
   m_Layer: 0
   m_Name: Elephant
-  m_TagString: Untagged
+  m_TagString: elephant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bc94a01be715b488e35b68bd2ec028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isOnGroud: 1
 --- !u!54 &489778086536439185
 Rigidbody:
   m_ObjectHideFlags: 0
