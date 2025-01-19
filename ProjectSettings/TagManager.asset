@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - ground
+  - cat
+  - mouse
+  - elephant
   layers:
   - Default
   - TransparentFX
