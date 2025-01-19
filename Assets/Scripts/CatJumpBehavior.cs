@@ -9,6 +9,7 @@ namespace Assets.Scripts
 {
     public class CatJumpBehavior : IJumpBehavior
     {
+        // POLYMORPHISM
         public void Jump(Rigidbody rb)
         {
             rb.AddForce(Vector3.up * 5, ForceMode.Impulse);

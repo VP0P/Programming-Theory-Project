@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts
 {
+    // INHERITANCE
     public class Cat : Animal
     {
         private void Awake()

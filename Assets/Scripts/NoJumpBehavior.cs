@@ -9,6 +9,7 @@ namespace Assets.Scripts
 {
     public class NoJumpBehavior : IJumpBehavior
     {
+        // POLYMORPHISM
         public void Jump(Rigidbody rb)
         {
             Debug.Log("I can't jump");

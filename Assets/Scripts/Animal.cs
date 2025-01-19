@@ -7,9 +7,12 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    // INHERITANCE
     public abstract class Animal : MonoBehaviour
     {
         private Rigidbody _rigidbody;
+
+        // ENCAPSULATION
         protected IJumpBehavior JumpBehavior { get; set; }
 
 
@@ -24,6 +27,7 @@ namespace Assets.Scripts
 
         }
 
+        // ENCAPSULATION
         private void Jump()
         {
             JumpBehavior.Jump(_rigidbody);
